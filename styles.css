@@ -1,0 +1,30 @@
+
+
+button {
+    width: 150px;
+    padding: 10px;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #111111;
+    cursor: pointer;
+    background-color: white;
+}
+
+#start-camera {
+    margin-top: 50px;
+}
+
+#video {
+    display: none;
+    margin: 50px auto 0 auto;
+}
+
+#start-record, #stop-record, #download-video {
+    display: none;
+}
+
+#download-video {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+

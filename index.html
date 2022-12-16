@@ -1,0 +1,35 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>
+        Task 1:Finger Tapping
+    </h1>
+    <button id="start-camera">Start Camera</button>
+    <div class="inputHide" style="display:none">
+        <video class="input_video"></video>
+        <video id="video" width="1280px" height="720px" autoplay=""></video>
+    </div>
+    <button id="start-record">Start Recording</button>
+    <button id="stop-record">Stop Recording</button>
+
+    <div id="error-message" style="display: none;">
+        <h1>Hand is not in frame</h1>
+    </div>
+
+    <canvas class="output_canvas" width="1280px" height="720px"></canvas>
+    <a id="download-video" download="test.webm">Download Video</a>
+
+    <input type="file" id="file-to-upload" />
+    <button id="upload-button">Upload</button>
+    
+  <script src="hands.js"></script>
+</body>
+</html>
